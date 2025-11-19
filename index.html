@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#636075]">
+    <div
+      class="container bg-[#2c2638] w-350 h-160 flex flex-row justify-around rounded-2xl overflow-hidden shadow-lg mx-auto mt-15 py-5 relative"
+    >
+      <!-- left side of the container -->
+      <div
+        class="leftSide w-150 h-full rounded-2xl border-2 border-red overflow-hidden"
+      >
+        <!-- Image as background -->
+        <img src="./assets/img/03.jpeg" alt="" class="object-cover" />
+      </div>
+
+      <!-- TopNav appears on top -->
+      <div
+        class="topNav flex flex-row justify-between items-center px-4 py-2 absolute z-10 left-12 top-10 w-150 rounded-2xl"
+      >
+        <div class="logo w-30">
+          <h1 class="text-white font-bold text-3xl font-serif">LOGO</h1>
+        </div>
+        <div
+          class="back bg-gray-300 px-3 rounded-2xl opacity-65 py-0.5 hover:opacity-100 transition ease-in-out text-center flex justify-center pb-1"
+        >
+          <span>Back to website -></span>
+        </div>
+      </div>
+
+      <!-- right side of the container -->
+      <div class="rightSide w-150 h-full">
+        <h1 class="text-white font-bold text-4xl mt-4">Create an Account</h1>
+        <p class="text-gray-300 mt-5">
+          Already have an account?
+          <a href="#" class="text-purple-300 underline">Log in</a>
+        </p>
+
+        <!-- form -->
+        <form action="">
+          <div class="name flex flex-row justify-between bg-amber-300">
+            <div class="firstN w-1/2">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="bg-[#3c364c] px-2 py-2 rounded-md text-white w-full"
+              />
+            </div>
+            <div class="lastN w-1/2">
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="bg-[#3c364c] px-2 py-2 rounded-md text-white w-full"
+              />
+            </div>
+          </div>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+
+          <input type="checkbox" />
+          <p>I agree to the <a href="">terms and conditions</a></p>
+          <button type="submit">Create Account</button>
+
+          <hr />
+          <p>Or sign up with</p>
+          <div class="btn">
+            <button class="google">Google</button>
+            <button class="facebook">Apple</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
