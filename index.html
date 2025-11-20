@@ -36,12 +36,12 @@
         <h1 class="text-white font-bold text-4xl mt-4">Create an Account</h1>
         <p class="text-gray-300 mt-5">
           Already have an account?
-          <a href="#" class="text-purple-300 underline">Log in</a>
+          <a href="#" class="text-[#988fb8] underline">Log in</a>
         </p>
 
         <!-- form -->
-        <form action="">
-          <div class="name flex flex-row justify-between bg-amber-300">
+        <form action="" class="mt-6">
+          <div class="name flex flex-row justify-between gap-2">
             <div class="firstN w-1/2">
               <input
                 type="text"
@@ -57,19 +57,71 @@
               />
             </div>
           </div>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
 
-          <input type="checkbox" />
-          <p>I agree to the <a href="">terms and conditions</a></p>
-          <button type="submit">Create Account</button>
+          <div class="mail flex flex-col gap-4 mt-4">
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="bg-[#3c364c] px-2 py-2 rounded-md text-white w-full"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="Password"
+                class="bg-[#3c364c] px-2 py-2 rounded-md text-white w-full"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="bg-[#3c364c] px-2 py-2 rounded-md text-white w-full"
+              />
+            </div>
+          </div>
 
-          <hr />
-          <p>Or sign up with</p>
-          <div class="btn">
-            <button class="google">Google</button>
-            <button class="facebook">Apple</button>
+          <!-- terms & conditions -->
+          <div class="terms flex flex-row items-center gap-2 mt-4 mb-4">
+            <div><input type="checkbox" /></div>
+            <div>
+              <p class="text-white">
+                I agree to the
+                <a href="" class="text-[#988fb8] underline"
+                  >terms and conditions</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-[#6d54b5] px-2 py-2 rounded-md text-white w-full mt-2 text-center hover:bg-purple-900 transition ease-in-out pb-3"
+          >
+            Create Account
+          </button>
+
+          <div class="relative mt-10 text-white"><hr /></div>
+          <span
+            class="absolute top-121.5 left-245 w-35 text-center bg-[#2c2638] text-white"
+            ><p>Or sign up with</p></span
+          >
+          <div class="btn flex flex-row justify-between gap-4 mt-8">
+            <button
+              class="google flex flex-row items-center justify-center gap-5 w-1/2 rounded-md border-2 border-white hover:bg-[#ffffff34] transition ease-in-out py-2 text-white"
+            >
+              <span class="w-7"
+                ><img src="./assets/img/googleIcon.png" alt="" /></span
+              >Google
+            </button>
+            <button
+              class="facebook flex flex-row items-center justify-center gap-5 w-1/2 rounded-md border-2 border-white hover:bg-[#ffffff34] transition ease-in-out py-2 text-white"
+            >
+              <span class="w-7"
+                ><img src="./assets/img/appleIcon.png" alt="" /></span
+              >Apple
+            </button>
           </div>
         </form>
       </div>
